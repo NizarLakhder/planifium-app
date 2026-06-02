@@ -1,0 +1,89 @@
+site_name: IFT2255 - Devoir 1 Equipe11
+site_description: Template de site web pour le cours IFT2255 (Génie logiciel)
+site_author: Louis-Edouard Lafontant
+site_url: https://ift3150-template.github.io
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: custom
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+    
+copyright: "&copy; 2025 <b>DIRO</b> &ndash; Template pour le cours IFT2255 (Génie logiciel) <br>Département d'informatique et de recherche opérationnelle <br>Université de Montréal"
+
+repo_name: template-rapport-ift2255
+repo_url: https://github.com/template-rapport-ift2255/template-rapport-ift2255.github.io
+
+# extra:
+#   social:
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/udem-diro/template-projet
+#       name: squidfunk on Fosstodon
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+  - pymdownx.keys
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+
+# extra_css:
+#   - css/no-sidebar.css
+
+nav:
+  - Vue d'ensemble: index.md
+  - Analyse des besoins: 
+    - Présentation générale: besoins/index.md
+    - Glossaire: besoins/glossaire.md
+    - Exigences: besoins/exigences.md
+    - Risques: besoins/risques.md
+    - Cas d'utilisation: besoins/cas-utilisation.md
+    - Flux principaux: besoins/flux-principaux.md
+  - Conception:
+    - Présentation générale: conception/index.md
+    - Architecture: conception/architecture.md
+    - Modèle de données: conception/modeles.md
+    - Diagrammes UML: conception/uml.md
+  - Application: application.md
+  - Bilan: bilan.md
