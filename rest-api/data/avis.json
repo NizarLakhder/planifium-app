@@ -1,0 +1,64 @@
+[ {
+  "id" : null,
+  "cours" : "IFT2255",
+  "difficulte" : 2,
+  "charge" : 3,
+  "commentaire" : "plutôt accessible, bon cours pour apprendre le génie logiciel",
+  "auteur" : "nizarlk"
+}, {
+  "id" : null,
+  "cours" : "IFT2935",
+  "difficulte" : 3,
+  "charge" : 4,
+  "commentaire" : "les TP SQL prennent du temps mais c'est formateur",
+  "auteur" : "nizarlk"
+}, {
+  "id" : null,
+  "cours" : "IFT1025",
+  "difficulte" : 3,
+  "charge" : 3,
+  "commentaire" : "beaucoup de récursivité",
+  "auteur" : "nizarlk"
+}, {
+  "id" : null,
+  "cours" : "IFT2125",
+  "difficulte" : 4,
+  "charge" : 4,
+  "commentaire" : "les preuves de complexité sont ardues",
+  "auteur" : "nizarlk"
+}, {
+  "id" : null,
+  "cours" : "IFT3913",
+  "difficulte" : 3,
+  "charge" : 5,
+  "commentaire" : "charge de travail élevée, beaucoup de rapports à rédiger",
+  "auteur" : "nizarlk"
+}, {
+  "id" : null,
+  "cours" : "IFT2935",
+  "difficulte" : 3,
+  "charge" : 4,
+  "commentaire" : "les TP SQL prennent du temps mais c'est formateur",
+  "auteur" : "nizarlk"
+}, {
+  "id" : "79272a97-c822-438e-bf11-cdebe9a1eebe",
+  "cours" : "IFT3335",
+  "difficulte" : 3,
+  "charge" : 3,
+  "commentaire" : "passionnant, bonne introduction à l'intelligence artificielle",
+  "auteur" : "nizarlk"
+}, {
+  "id" : "01e8691c-46ae-459f-9859-55737bdb9b27",
+  "cours" : "IFT2015",
+  "difficulte" : 4,
+  "charge" : 4,
+  "commentaire" : "les arbres et les graphes demandent beaucoup de pratique",
+  "auteur" : "nizarlk"
+}, {
+  "id" : "e2e99ccc-feb1-44d5-b907-99771bc51149",
+  "cours" : "IFT1015",
+  "difficulte" : 1,
+  "charge" : 2,
+  "commentaire" : "est parfait pour débuter, le prof explique très bien",
+  "auteur" : "nizarlk"
+} ]

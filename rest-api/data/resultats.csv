@@ -1,0 +1,101 @@
+sigle,nom,moyenne,score,participants,trimestres
+ANG1904,Anglais 4 (niveau B1.2),B,3.58,8,5
+ANG1924,Rédaction académique et professionnelle,B+,3.88,10,5
+ANG1926,Anglais écrit pour sciences nature et santé,A,4.61,13,8
+ANG1933,Expression orale académique et professionnelle,A,4.79,5,4
+BIO1203,Introduction à la génétique,C+,2.77,73,9
+CRN1901,Coréen 1 (niveau A1.1),A-,4.23,11,6
+DRT1002S,Introduction au droit,B-,3.02,15,3
+ECN1000,Principes d'économie,B,3.35,421,9
+ECN1040,Introduction à la microéconomie,B+,3.95,13,5
+ECN1050,Introduction à la macroéconomie,B-,3.19,201,9
+ECN1075,Techniques d'analyse économique 2,A-,4.51,8,5
+ECN1160,Analyse des données économiques,B+,4.02,10,5
+ECN1700,Économie et mondialisation,B,3.38,14,6
+EDP1504,"Lecture, écriture et grammaire du texte",B,3.64,7,5
+EDP1604,Lecture et construction textuelle,B+,3.81,9,7
+EDP2704,Production écrite et stylistique,B,3.36,6,4
+ESP1901,Espagnol 1 (niveau A1),A-,4.51,27,8
+GER1000D,Introduction à la gérontologie,C+,2.64,5,4
+GER1016D,Physiologie et vieillissement,A+,4.93,7,5
+IFT1005,Design et développement Web,B,3.58,666,6
+IFT1015,Programmation 1,C,2.29,658,9
+IFT1025,Programmation 2,B,3.61,513,9
+IFT1065,Structures discrètes en informatique,C,2.43,706,6
+IFT1215,Introduction aux systèmes informatiques,B-,3.06,651,6
+IFT1227,Architecture des ordinateurs 1,B-,3.27,555,6
+IFT1575,Modèles de recherche opérationnelle,C+,2.63,582,6
+IFT2015,Structures de données,B-,3.11,494,9
+IFT2035,Concepts des langages de programmation,C+,2.85,520,6
+IFT2105,Introduction à l'informatique théorique,C,2.39,503,9
+IFT2125,Introduction à l'algorithmique,C+,2.62,449,9
+IFT2255,Génie logiciel,B+,3.86,439,6
+IFT2505,Optimisation linéaire,B-,2.92,127,3
+IFT3295,Bio-informatique,C,2.49,63,3
+IFT3335,Intelligence artificielle : introduction,B,3.57,219,3
+IFT3355,Infographie,C+,2.54,136,3
+IFT3375,Informatique théorique,D+,1.52,24,3
+IFT3395,Fondements de l'apprentissage machine,B+,3.85,187,5
+IFT3700,Introduction à la science des données,B,3.54,183,3
+IFT3913,Qualité du logiciel et métriques,A,4.62,250,3
+IFT4055,Projet informatique honor,A,4.68,18,8
+JEU1003,Jeu vidéo et cinéma,B,3.36,6,3
+JPN1901,Japonais 1 (niveau A1.1),A-,4.38,36,9
+LNG1080,"Notions de lexicologie, morphologie et sémantique",B-,3.14,13,3
+MAT1400,Calcul 1,D+,1.55,824,6
+MAT1600,Algèbre linéaire,C-,2.11,643,6
+MAT1903,Calcul différentiel,C-,2.01,17,7
+MAT1905,Algèbre vectorielle et linéaire,C-,1.79,68,8
+MAT1923,Calcul intégral,C-,1.98,20,8
+MAT1978,Probabilités et statistique,C-,1.9,567,6
+PHY1972,Comprendre l'Univers,A,4.55,176,9
+PSY1045,Motivation et émotion,C+,2.51,10,5
+REI1010,Introduction aux relations industrielles,B-,3.24,22,5
+REL1208,Introduction aux grandes religions,C+,2.73,9,5
+STT1700,Introduction à la statistique,B,3.63,11,5
+TXM1000D,Notions fondamentales sur l’usage et la dépendance,B+,4.04,11,6
+ALL1901,Allemand 1 (niveau A1.1),B+,4.01,11,8
+ANG1903,Anglais 3 (niveau B1.1),A-,4.2,7,3
+COM2001,Communication et mondialisation,B+,4.04,11,5
+ECN1070,Techniques d'analyse économique 1,A,4.68,11,4
+ESP1902,Espagnol 2 (niveau A2),A-,4.45,16,7
+IFT1810,Introduction à la programmation,C,2.17,6,4
+IFT2245,Systèmes d'exploitation,B,3.64,416,3
+IFT2425,Introduction aux algorithmes numériques,C+,2.82,109,3
+IFT2905,Interfaces personne-machine,B+,3.87,399,3
+IFT2935,Bases de données,B+,3.83,384,3
+IFT3065,Langages de programmation et compilation,C,2.18,32,2
+IFT3150,Projet d'informatique,A-,4.46,78,8
+IFT3155,Informatique quantique,C-,1.79,86,3
+IFT3205,Traitement du signal,B-,2.99,22,1
+IFT3545,Graphes et réseaux,C-,2.11,52,3
+IFT3710,Projets en aprentissage automatique,D+,1.48,21,3
+IFT3911,Analyse et conception des logiciels,B-,3.11,193,3
+JES1001,Jeunes et réalités sociales,B+,3.85,6,5
+LNG1955,Notions générales de linguistique,B,3.38,28,6
+MAT1000,Analyse 1,C+,2.55,7,6
+MAT1720,Probabilités,B,3.62,5,4
+PHY1651,Mécanique classique 1,D+,1.55,5,4
+REI1030G,Gestion et fonctions de l'organisation,A-,4.48,10,5
+ANG1921,Écrire en anglais 1 (niveau B1),B,3.65,13,5
+CHN1901,Chinois 1 (niveau A1.1),A+,5,8,4
+ECN2230,Institutions et marchés financiers,D+,1.52,12,4
+HOR1200,Horizon: Risques et défis du XXIe siècle,B+,3.92,10,4
+IFT3225,Technologie de l'Internet,B-,3.2,304,5
+NUT1970,"Activité physique, nutrition et santé",B,3.42,6,3
+PBT1004,Communication créative et médias,A+,4.88,5,2
+SPU2000D,Introduction à l'épidémiologie,A+,4.95,5,4
+STT2700,Concepts et méthodes en statistique,D,1,11,5
+HGL1011,Initiation à l'archéologie grécoromaine,A,4.86,6,3
+HST1031,Histoire de l'Antiquité,A,4.76,8,2
+IFT3325,Téléinformatique,B-,2.94,74,2
+IFT3655,Modèles stochastiques,D+,1.57,30,2
+JPN1902,Japonais 2 (niveau A1.2),B-,3.14,8,3
+REI1010G,Introduction aux relations industrielles,A,4.86,5,3
+REI1610G,Pratiques de gestion innovantes et mobilisatrices,A-,4.15,7,4
+TXM1150D,De la prévention à la réadaptation en dépendances,A,4.68,6,4
+IFT3275,Sécurité informatique,B,3.37,166,2
+ITL1901,Italien 1 (niveau A1),A,4.87,7,4
+PHI1130,Philosophie des sciences,B,3.43,6,2
+SIA2022,Développement de projet avec l'IA,A,4.69,7,1
+SIA2020,Stratégies de communication avec l'IA,A,4.61,6,1

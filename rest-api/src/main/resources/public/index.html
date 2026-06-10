@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planifium – Cours universitaires DIRO</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <h1><i class="fa-solid fa-graduation-cap"></i> Planifium</h1>
+  <p>Explorez, comparez et planifiez vos cours universitaires</p>
+  <nav class="header-nav">
+    <a href="#section-catalogue"><i class="fa-solid fa-magnifying-glass"></i> Catalogue</a>
+    <a href="#section-comparer"><i class="fa-solid fa-scale-balanced"></i> Comparer</a>
+    <a href="#section-conflit"><i class="fa-solid fa-calendar-xmark"></i> Conflits</a>
+    <a href="#section-eligibilite"><i class="fa-solid fa-circle-check"></i> Éligibilité</a>
+    <a href="#section-programme"><i class="fa-solid fa-book-open"></i> Programme</a>
+  </nav>
+</header>
+
+<section class="search" id="section-catalogue">
+  <input type="text" id="searchInput" placeholder="Rechercher par sigle ou mots-clés (ex: IFT, programmation)">
+  <select id="termFilter">
+    <option value="">Tous les trimestres</option>
+    <option value="winter">H25 (Hiver)</option>
+    <option value="autumn">A24 (Automne)</option>
+    <option value="summer">E24 (Été)</option>
+  </select>
+</section>
+
+<div id="course-count" class="course-count"></div>
+<section id="courses"></section>
+<p id="global-loading" style="text-align:center; display:none;">
+  Chargement des cours<span id="global-dots">.</span>
+</p>
+<div class="button-container" id="pagination-buttons" style="display:none;">
+  <button class="load-more" onclick="afficherPlusDeCours()"><i class="fa-solid fa-chevron-down"></i> Voir plus</button>
+  <button class="load-less" onclick="afficherMoinsDeCours()"><i class="fa-solid fa-chevron-up"></i> Voir moins</button>
+</div>
+
+<div class="panels-wrapper">
+
+  <section class="panel" id="section-comparer">
+    <h2><i class="fa-solid fa-scale-balanced"></i> Comparer des cours</h2>
+    <p class="panel-desc">Entrez 2 sigles ou plus séparés par des virgules pour comparer crédits, difficulté et résultats académiques.</p>
+    <div class="inline-form">
+      <input type="text" id="compareInput" placeholder="ex: IFT2255, IFT1015, IFT1025">
+      <button id="compareBtn" onclick="compareCourses()"><i class="fa-solid fa-scale-balanced"></i> Comparer</button>
+    </div>
+    <div id="comparison"></div>
+  </section>
+
+  <section class="panel" id="section-conflit">
+    <h2><i class="fa-solid fa-calendar-xmark"></i> Vérifier un conflit d'horaire</h2>
+    <p class="panel-desc">Entrez exactement deux sigles pour détecter les chevauchements d'horaire.</p>
+    <div class="inline-form">
+      <input type="text" id="conflictInput" placeholder="Ex: IFT2255, MAT1400">
+      <select id="conflictTerm">
+        <option value="winter">H25 (Hiver)</option>
+        <option value="autumn">A24 (Automne)</option>
+        <option value="summer">E24 (Été)</option>
+      </select>
+      <button id="conflictBtn" onclick="checkConflictBetweenTwoCourses()"><i class="fa-solid fa-magnifying-glass"></i> Vérifier le conflit</button>
+    </div>
+    <div id="conflictSchedules"></div>
+    <div id="conflictResult"></div>
+  </section>
+
+  <section class="panel" id="section-eligibilite">
+    <h2><i class="fa-solid fa-circle-check"></i> Vérifier l'éligibilité à un cours</h2>
+    <div class="eligibility-form">
+      <div class="form-group">
+        <label for="targetCourse">Cours à vérifier</label>
+        <input type="text" id="targetCourse" placeholder="Ex: IFT2255">
+      </div>
+      <div class="form-group">
+        <label for="completedCourses">Cours complétés</label>
+        <input type="text" id="completedCourses" placeholder="Ex: IFT1015, IFT1025">
+      </div>
+      <div class="form-group">
+        <label for="cycle">Cycle d'études</label>
+        <select id="cycle">
+          <option value="bac">Baccalauréat</option>
+          <option value="maitrise">Maîtrise</option>
+        </select>
+      </div>
+    </div>
+    <button id="eligibilityBtn" onclick="checkEligibility()"><i class="fa-solid fa-circle-check"></i> Vérifier l'éligibilité</button>
+    <div id="eligibilityResult"></div>
+  </section>
+
+  <section class="panel" id="section-programme">
+    <h2><i class="fa-solid fa-book-open"></i> Cours par programme</h2>
+    <p class="panel-desc">Entrez l'identifiant d'un programme pour voir tous ses cours (ex: 117510).</p>
+    <div class="inline-form">
+      <input type="text" id="programId" placeholder="Ex : 117510">
+      <button onclick="goToProgramPage()"><i class="fa-solid fa-arrow-right"></i> Voir le programme</button>
+    </div>
+    <div id="programError"></div>
+  </section>
+
+</div>
+
+<button class="scroll-btn" id="scrollBtn" onclick="handleScroll()"><i class="fa-solid fa-chevron-down"></i></button>
+
+<script>
+function handleScroll() {
+  const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 10;
+  if (atBottom) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+}
+
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollBtn');
+  if (!btn) return;
+  const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 10;
+  btn.innerHTML = atBottom
+    ? '<i class="fa-solid fa-chevron-up"></i>'
+    : '<i class="fa-solid fa-chevron-down"></i>';
+});
+
+function goToProgramPage() {
+  const programId = document.getElementById("programId").value.trim();
+  const errorEl = document.getElementById("programError");
+  if (!programId) {
+    errorEl.innerHTML = '<div class="error">Veuillez entrer un identifiant de programme.</div>';
+    return;
+  }
+  errorEl.innerHTML = "";
+  window.location.href = "program.html?id=" + programId;
+}
+</script>
+<script src="catalogue.js"></script>
+</body>
+</html>

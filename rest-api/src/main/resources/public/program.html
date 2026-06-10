@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cours du programme</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="topbar">
+  <button class="back-btn" onclick="history.back()">← Retour</button>
+  <h1>Cours du programme</h1>
+</div>
+
+<section class="panel">
+  <div id="programInfo"></div>
+</section>
+
+<section class="panel">
+  <h2>Liste des cours</h2>
+  <div id="programCourses"></div>
+</section>
+
+<button class="scroll-btn" id="scrollBtn" onclick="handleScroll()"><i class="fa-solid fa-chevron-down"></i></button>
+
+<script>
+function handleScroll() {
+  const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 10;
+  if (atBottom) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+}
+
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollBtn');
+  if (!btn) return;
+  const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 10;
+  btn.innerHTML = atBottom
+    ? '<i class="fa-solid fa-chevron-up"></i>'
+    : '<i class="fa-solid fa-chevron-down"></i>';
+});
+</script>
+<script src="program.js"></script>
+</body>
+</html>
