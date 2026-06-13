@@ -1,10 +1,25 @@
 # Planifium — University Course Planning Web App
 
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Maven](https://img.shields.io/badge/Maven-red)
+![Javalin](https://img.shields.io/badge/Javalin-brightgreen)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
+![discord.py](https://img.shields.io/badge/discord.py-Bot-5865F2)
+
 Planifium is a full-stack web application that helps students search, compare, and plan university courses.
 
 The platform provides course search, schedule conflict detection, prerequisite checks, course comparison, student reviews, and program-based navigation. The interface is currently available in French and was designed for university course planning.
 
 The project was initially developed for the IFT2255 course and later improved with a cleaner user interface, a Java REST API, a Discord bot for collecting student feedback, and aggregated academic data.
+
+---
+
+## Demo
+
+[![Video Demo](https://img.shields.io/badge/Watch-Video%20Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/KQBc4uQrrLw)
+
+This demo showcases course search, course details, course comparison, schedule conflict detection, eligibility checks, and Discord bot review submission.
 
 ---
 
@@ -70,18 +85,6 @@ The bot listens for natural language messages, extracts course review informatio
 **Example usage:**
 > *"IFT2255 is approachable, difficulty 2/5, workload 3/5, good introductory course"*
 
-### 3. Run the Documentation
-
-```bash
-mkdocs serve
-```
-
-The documentation will be available at:
-
-```
-http://localhost:8000
-```
-
 ---
 
 ## Tests
@@ -109,14 +112,4 @@ planifium/
 │   ├── src/main/resources/public/  # Static web frontend
 │   └── pom.xml
 └── mkdocs.yml
-```
-
----
-
-## Demo
-
-The application runs locally at:
-
-```
-http://localhost:7070
 ```

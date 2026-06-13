@@ -1,0 +1,24 @@
+/* custom.css */
+
+:root  > * {
+  --md-primary-fg-color:        #3573DD;
+  --md-primary-fg-color--light: #4e85e4;
+  --md-primary-fg-color--dark:  #2C5EB4;
+}
+
+/* Hide all sidebars */
+/* .md-sidebar {
+    display: none !important;
+} */
+
+/* Hide the section sidebar (on the left) */
+@media screen and (min-width: 76em) {
+    .md-sidebar--primary {
+        display: none !important;
+    }
+}
+
+/* Hide the table of contents */
+/* .md-sidebar--secondary {
+    display: none !important;
+} */
